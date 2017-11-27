@@ -1,0 +1,17 @@
+{
+  "commitish" : "10.0.0",
+  "iOS" : [
+    {
+      "name" : "ReactiveMoya",
+      "hash" : "7aa0553671ef1126474d959cea8f6cbe85c270dd5d8031641f864327f4758f0e"
+    },
+    {
+      "name" : "RxMoya",
+      "hash" : "b86aa998659310483d54aa2e6a12db80963bff4d632ae5062d8ad68f7f38d5cf"
+    },
+    {
+      "name" : "Moya",
+      "hash" : "69a0261e209f8dda4d775db15fd6bc6b82561c5acea090bc5bd1a0fcf87e9601"
+    }
+  ]
+}

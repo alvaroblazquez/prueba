@@ -1,0 +1,93 @@
+//
+//  CollectorViewController.swift
+//  prueba
+//
+//  Created by Alvaro Informática on 27/11/17.
+//  Copyright © 2017 Alvaro Blazquez Montero. All rights reserved.
+//
+
+import UIKit
+
+class CollectorViewController: UIViewController {
+
+    var mainCVC: MainCVC?
+    var mainCVC2: MainCVC?
+    var sliderCVC: SliderCVC?
+
+    @IBOutlet weak var contentView: UIView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 300)
+        mainCVC = MainCVC(frame: frame, delegate: self, type: .products)
+        contentView.addSubview(mainCVC!)
+        mainCVC?.titleLabel.text = "Ofertas del mes"
+        mainCVC?.collectionView.reloadData()
+
+
+        let frame2 = CGRect(x: 0, y: 300, width: self.view.frame.width, height: 200)
+        mainCVC2 = MainCVC(frame: frame2, delegate: self, type: .images)
+        contentView.addSubview(mainCVC2!)
+        mainCVC2?.titleLabel.text = "Top Ventas"
+        mainCVC2?.actionButton.isHidden = true
+        mainCVC2?.collectionView.reloadData()
+
+        let frame3 = CGRect(x: 0, y: 600, width: self.view.frame.width, height: 302)
+        let photoView = PhotoView(frame: frame3)
+        contentView.addSubview(photoView)
+
+        let frame4 = CGRect(x: 0, y: 910, width: self.view.frame.width, height: 300)
+        sliderCVC = SliderCVC(frame: frame4, delegate: self)
+        contentView.addSubview(sliderCVC!)
+        sliderCVC?.collectionView.reloadData()
+
+        // Do any additional setup after loading the view.
+        //collectionView.reloadData()
+
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+
+extension CollectorViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == self.mainCVC?.collectionView {
+            let cell = self.mainCVC?.collectionView(cellForItemAt: indexPath)
+
+            return cell!
+
+        }
+        if collectionView == self.sliderCVC?.collectionView {
+            let cell = self.sliderCVC?.collectionView(cellForItemAt: indexPath)
+
+            return cell!
+
+        }
+        let cell = self.mainCVC2?.collectionView(cellForItemAt: indexPath)
+
+        return cell!
+
+
+    }
+
+    
+}

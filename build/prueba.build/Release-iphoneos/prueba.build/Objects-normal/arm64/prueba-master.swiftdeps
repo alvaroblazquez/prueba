@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "f4d13ec171f4debad2aa25eff581915c"
+build_time: [1511280272, 791722000]
+inputs:
+  "/Users/Alvaro/Documents/Apps/iOS/prueba/prueba/SecondViewController.swift": [9223372036, 854775807]
+  "/Users/Alvaro/Documents/Apps/iOS/prueba/prueba/MyService.swift": [9223372036, 854775807]
+  "/Users/Alvaro/Documents/Apps/iOS/prueba/prueba/ViewController.swift": [9223372036, 854775807]
+  "/Users/Alvaro/Documents/Apps/iOS/prueba/prueba/ThirdViewController.swift": [9223372036, 854775807]
+  "/Users/Alvaro/Documents/Apps/iOS/prueba/prueba/AppDelegate.swift": [9223372036, 854775807]
