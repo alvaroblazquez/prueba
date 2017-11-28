@@ -44,7 +44,6 @@
                     </button>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="5kt-MS-Ujh" secondAttribute="bottom" id="5Cf-k5-GTp"/>
                 <constraint firstItem="5VO-dA-V4J" firstAttribute="width" secondItem="N6S-A8-jWe" secondAttribute="width" multiplier="0.8" id="5jD-vM-qI0"/>
@@ -58,6 +57,11 @@
                 <constraint firstItem="5VO-dA-V4J" firstAttribute="bottom" secondItem="N6S-A8-jWe" secondAttribute="bottom" constant="-32" id="vPx-oZ-FXn"/>
             </constraints>
             <size key="customSize" width="176" height="172"/>
+            <connections>
+                <outlet property="actionButton" destination="5VO-dA-V4J" id="VV3-ns-oev"/>
+                <outlet property="photoImageView" destination="N6S-A8-jWe" id="boq-zS-nAD"/>
+                <outlet property="subtitleLabel" destination="5kt-MS-Ujh" id="wsr-op-3bz"/>
+            </connections>
             <point key="canvasLocation" x="25" y="41"/>
         </collectionViewCell>
     </objects>

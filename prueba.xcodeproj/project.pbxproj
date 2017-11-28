@@ -38,6 +38,9 @@
 		38DB9E261FCD8C0B00FF0875 /* ProductCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E251FCD8C0B00FF0875 /* ProductCV.swift */; };
 		38DB9E291FCD973B00FF0875 /* ProductCVItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E281FCD973B00FF0875 /* ProductCVItemVM.swift */; };
 		38DB9E2B1FCDB77000FF0875 /* ProductCVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E2A1FCDB77000FF0875 /* ProductCVVM.swift */; };
+		38DB9E2D1FCDBCCD00FF0875 /* ImageCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E2C1FCDBCCD00FF0875 /* ImageCV.swift */; };
+		38DB9E2F1FCDBF1C00FF0875 /* ImageCVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E2E1FCDBF1C00FF0875 /* ImageCVVM.swift */; };
+		38DB9E311FCDBF3400FF0875 /* ImageCVItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E301FCDBF3400FF0875 /* ImageCVItemVM.swift */; };
 		7E3205315DCA5B8518FBDD91 /* Pods_prueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0E04DBD459E2EA0574F681 /* Pods_prueba.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +99,9 @@
 		38DB9E251FCD8C0B00FF0875 /* ProductCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCV.swift; sourceTree = "<group>"; };
 		38DB9E281FCD973B00FF0875 /* ProductCVItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVItemVM.swift; sourceTree = "<group>"; };
 		38DB9E2A1FCDB77000FF0875 /* ProductCVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVVM.swift; sourceTree = "<group>"; };
+		38DB9E2C1FCDBCCD00FF0875 /* ImageCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCV.swift; sourceTree = "<group>"; };
+		38DB9E2E1FCDBF1C00FF0875 /* ImageCVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCVVM.swift; sourceTree = "<group>"; };
+		38DB9E301FCDBF3400FF0875 /* ImageCVItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCVItemVM.swift; sourceTree = "<group>"; };
 		3BBDDA0FEDDBE836AA477CB4 /* Pods-pruebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaTests/Pods-pruebaTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B8FDE9F0BB5F941A77A1222 /* Pods-pruebaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaUITests/Pods-pruebaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E69C1DA67CBD6739A9AE72F /* Pods-pruebaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaUITests/Pods-pruebaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				38DB9E251FCD8C0B00FF0875 /* ProductCV.swift */,
+				38DB9E2C1FCDBCCD00FF0875 /* ImageCV.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +280,8 @@
 			children = (
 				38DB9E281FCD973B00FF0875 /* ProductCVItemVM.swift */,
 				38DB9E2A1FCDB77000FF0875 /* ProductCVVM.swift */,
+				38DB9E2E1FCDBF1C00FF0875 /* ImageCVVM.swift */,
+				38DB9E301FCDBF3400FF0875 /* ImageCVItemVM.swift */,
 			);
 			path = ViewsModel;
 			sourceTree = "<group>";
@@ -615,10 +624,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DB9E311FCDBF3400FF0875 /* ImageCVItemVM.swift in Sources */,
 				38DB9E261FCD8C0B00FF0875 /* ProductCV.swift in Sources */,
 				38DB9E291FCD973B00FF0875 /* ProductCVItemVM.swift in Sources */,
 				3845FECE1FCC1DA800D47986 /* ProductCVC.swift in Sources */,
 				38DB9E2B1FCDB77000FF0875 /* ProductCVVM.swift in Sources */,
+				38DB9E2D1FCDBCCD00FF0875 /* ImageCV.swift in Sources */,
 				387FB0D81FCC60EF0084F629 /* SliderCVC.swift in Sources */,
 				3845FED41FCC20E800D47986 /* MainCVC.swift in Sources */,
 				388479F31FBEFA98004575F0 /* SecondViewController.swift in Sources */,
@@ -628,6 +639,7 @@
 				3845FEC71FCC08D300D47986 /* CollectorViewController.swift in Sources */,
 				3845FEC91FCC0DF000D47986 /* CollectionViewCell.swift in Sources */,
 				388479C71FBEEADF004575F0 /* ViewController.swift in Sources */,
+				38DB9E2F1FCDBF1C00FF0875 /* ImageCVVM.swift in Sources */,
 				388479F51FBF09CC004575F0 /* ThirdViewController.swift in Sources */,
 				388479C51FBEEADF004575F0 /* AppDelegate.swift in Sources */,
 			);

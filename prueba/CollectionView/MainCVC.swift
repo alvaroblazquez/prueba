@@ -24,6 +24,7 @@ class MainCVC: UIView {
 
     var type = MainCollectionView.products
     var viewModel: ProductCVVM!
+    var viewModelImage: ImageCVVM!
 
     init(frame: CGRect, delegate: UIViewController, type: MainCollectionView) {
         super.init(frame: frame)
@@ -84,6 +85,7 @@ extension MainCVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate 
             return cell
         case .images:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCVC.ReuseIdentifier, for: indexPath) as! ImageCVC
+            cell.itemVM = viewModelImage.data[indexPath.row]
             return cell
         }
 
@@ -96,7 +98,9 @@ extension MainCVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate 
                 let width = CGFloat(itemViewModel.width) * self.collectionView.frame.width / 100
                 return CGSize(width: width, height: self.collectionView.frame.height)
             case .images:
-                return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
+                let itemViewModel = viewModelImage.data[indexPath.row]
+                let width = CGFloat(itemViewModel.width) * self.collectionView.frame.width / 100
+                return CGSize(width: width, height: self.collectionView.frame.height)
         }
     }
 
