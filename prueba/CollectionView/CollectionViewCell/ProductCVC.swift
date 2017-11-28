@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Cosmos
 
 class ProductCVC: UICollectionViewCell {
 
@@ -19,7 +18,7 @@ class ProductCVC: UICollectionViewCell {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var offerLabel: UILabel!
-    @IBOutlet weak var starsView: CosmosView!
+    @IBOutlet weak var starsView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
 

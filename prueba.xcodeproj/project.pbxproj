@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05AD7AC131F92CAE1FCD2BA4 /* Pods_pruebaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC61BE10412A1036A15C55E /* Pods_pruebaUITests.framework */; };
 		2F03A275F9DCA885C65F50E5 /* Pods_pruebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AB5651E99D9E8910E9450D /* Pods_pruebaTests.framework */; };
+		381C403D1FCD6149003F798D /* StarsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381C403C1FCD6149003F798D /* StarsView.xib */; };
 		3845FEC71FCC08D300D47986 /* CollectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845FEC61FCC08D300D47986 /* CollectorViewController.swift */; };
 		3845FEC91FCC0DF000D47986 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845FEC81FCC0DF000D47986 /* CollectionViewCell.swift */; };
 		3845FECE1FCC1DA800D47986 /* ProductCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845FECC1FCC1DA800D47986 /* ProductCVC.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		0AC61BE10412A1036A15C55E /* Pods_pruebaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B31E98963E0944D278775C /* Pods-prueba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prueba.release.xcconfig"; path = "Pods/Target Support Files/Pods-prueba/Pods-prueba.release.xcconfig"; sourceTree = "<group>"; };
+		381C403C1FCD6149003F798D /* StarsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarsView.xib; sourceTree = "<group>"; };
 		3845FEC61FCC08D300D47986 /* CollectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorViewController.swift; sourceTree = "<group>"; };
 		3845FEC81FCC0DF000D47986 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3845FECC1FCC1DA800D47986 /* ProductCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVC.swift; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		381C403B1FCD6114003F798D /* StarsView */ = {
+			isa = PBXGroup;
+			children = (
+				381C403C1FCD6149003F798D /* StarsView.xib */,
+			);
+			path = StarsView;
+			sourceTree = "<group>";
+		};
 		3845FECA1FCC1D7000D47986 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		388479C31FBEEADF004575F0 /* prueba */ = {
 			isa = PBXGroup;
 			children = (
+				381C403B1FCD6114003F798D /* StarsView */,
 				3845FEDC1FCC403C00D47986 /* ImageView */,
 				3845FECA1FCC1D7000D47986 /* CollectionView */,
 				387F85C81FC5A8B1006AB546 /* Analytics */,
@@ -375,6 +386,7 @@
 				3845FEDB1FCC370400D47986 /* ImageCVC.xib in Resources */,
 				3845FED51FCC20E800D47986 /* MainCVC.xib in Resources */,
 				3845FECF1FCC1DA800D47986 /* ProductCVC.xib in Resources */,
+				381C403D1FCD6149003F798D /* StarsView.xib in Resources */,
 				388479CF1FBEEADF004575F0 /* LaunchScreen.storyboard in Resources */,
 				387FB0DA1FCC60FA0084F629 /* SliderCVC.xib in Resources */,
 				388479CC1FBEEADF004575F0 /* Assets.xcassets in Resources */,

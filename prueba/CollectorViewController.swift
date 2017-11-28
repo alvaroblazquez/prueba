@@ -18,25 +18,25 @@ class CollectorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 300)
+        let frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height*0.5)
         mainCVC = MainCVC(frame: frame, delegate: self, type: .products)
         contentView.addSubview(mainCVC!)
         mainCVC?.titleLabel.text = "Ofertas del mes"
         mainCVC?.collectionView.reloadData()
 
 
-        let frame2 = CGRect(x: 0, y: 300, width: self.view.frame.width, height: 200)
+        let frame2 = CGRect(x: 0, y: 400, width: self.view.frame.width, height: 500)
         mainCVC2 = MainCVC(frame: frame2, delegate: self, type: .images)
         contentView.addSubview(mainCVC2!)
         mainCVC2?.titleLabel.text = "Top Ventas"
         mainCVC2?.actionButton.isHidden = true
         mainCVC2?.collectionView.reloadData()
 
-        let frame3 = CGRect(x: 0, y: 600, width: self.view.frame.width, height: 302)
+        let frame3 = CGRect(x: 0, y: 1000, width: self.view.frame.width, height: 302)
         let photoView = PhotoView(frame: frame3)
         contentView.addSubview(photoView)
 
-        let frame4 = CGRect(x: 0, y: 910, width: self.view.frame.width, height: 300)
+        let frame4 = CGRect(x: 0, y: 910, width: self.view.frame.width, height: 500)
         sliderCVC = SliderCVC(frame: frame4, delegate: self)
         contentView.addSubview(sliderCVC!)
         sliderCVC?.collectionView.reloadData()
@@ -66,7 +66,7 @@ class CollectorViewController: UIViewController {
 
 extension CollectorViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -73,8 +73,6 @@ class MainCVC: UIView {
 
 }
 
-
-
 extension MainCVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
 
     func collectionView(cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -90,7 +88,7 @@ extension MainCVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate 
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.frame.width/2.5, height: self.collectionView.frame.height)
+        return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
     }
 
 }
