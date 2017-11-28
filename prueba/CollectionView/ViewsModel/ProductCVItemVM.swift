@@ -66,7 +66,7 @@ struct ProductCVItemVM: ProductCVItemVMProtocol {
         return productCV.isFavourite
     }
     var width: Int {
-        return productCV.width
+        return productCV.width > 0 ? productCV.width : 35
     }
     var action: String {
         return productCV.action

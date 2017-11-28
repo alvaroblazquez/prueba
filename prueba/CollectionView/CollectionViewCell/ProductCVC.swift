@@ -40,7 +40,7 @@ class ProductCVC: UICollectionViewCell {
     }
 
     /// Bind ViewModel To View
-    func bindViewModel() {
+    private func bindViewModel() {
         guard let _itemVM = itemVM else {
             fatalError("BindViewModel does not has Model - ProductCVC")
         }

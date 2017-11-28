@@ -23,6 +23,7 @@ class MainCVC: UIView {
     @IBOutlet var contentView: UIView!
 
     var type = MainCollectionView.products
+    var viewModel: ProductCVVM!
 
     init(frame: CGRect, delegate: UIViewController, type: MainCollectionView) {
         super.init(frame: frame)
@@ -76,19 +77,27 @@ class MainCVC: UIView {
 extension MainCVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
 
     func collectionView(cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell: UICollectionViewCell
         switch self.type {
         case .products:
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCVC.ReuseIdentifier, for: indexPath) as! ProductCVC
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCVC.ReuseIdentifier, for: indexPath) as! ProductCVC
+            cell.itemVM = viewModel.data[indexPath.row]
+            return cell
         case .images:
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCVC.ReuseIdentifier, for: indexPath) as! ImageCVC
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCVC.ReuseIdentifier, for: indexPath) as! ImageCVC
+            return cell
         }
 
-        return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
+        switch self.type {
+            case .products:
+                let itemViewModel = viewModel.data[indexPath.row]
+                let width = CGFloat(itemViewModel.width) * self.collectionView.frame.width / 100
+                return CGSize(width: width, height: self.collectionView.frame.height)
+            case .images:
+                return CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
+        }
     }
 
 }
