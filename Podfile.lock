@@ -1,15 +1,21 @@
 PODS:
   - Cosmos (12.0.1)
   - JSONWebToken (2.2.0)
+  - Kingfisher (4.3.1)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Cosmos (~> 12.0)
   - JSONWebToken
+  - Kingfisher
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
   JSONWebToken: 6fae32489632658d563dd6952a5c34020ea813e4
+  Kingfisher: 75541c4b62f02e1fde6f9772303de3d9ebe8f5b3
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 6588d4ce0f61816d7f078998070b0701322692bb
+PODFILE CHECKSUM: 6a333b58163700235ba9c53fa5f6bbeea3089604
 
 COCOAPODS: 1.3.1

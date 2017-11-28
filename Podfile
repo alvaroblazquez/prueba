@@ -6,8 +6,9 @@ target 'prueba' do
   use_frameworks!
 
   pod 'JSONWebToken'  
+  pod 'SwiftyJSON'
   pod 'Cosmos', '~> 12.0'
-
+  pod 'Kingfisher'
   target 'pruebaTests' do
     inherit! :search_paths
     # Pods for testing

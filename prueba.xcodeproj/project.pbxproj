@@ -35,6 +35,8 @@
 		38D0D34C1FC30B4B00448C13 /* MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0D34B1FC30B4B00448C13 /* MyService.swift */; };
 		38D0D34E1FC30CC700448C13 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D0D34D1FC30CC700448C13 /* Alamofire.framework */; };
 		38D0D3501FC30D1100448C13 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D0D34F1FC30D1100448C13 /* Result.framework */; };
+		38DB9E261FCD8C0B00FF0875 /* ProductCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E251FCD8C0B00FF0875 /* ProductCV.swift */; };
+		38DB9E291FCD973B00FF0875 /* ProductCVItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB9E281FCD973B00FF0875 /* ProductCVItemVM.swift */; };
 		7E3205315DCA5B8518FBDD91 /* Pods_prueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0E04DBD459E2EA0574F681 /* Pods_prueba.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		38D0D34B1FC30B4B00448C13 /* MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyService.swift; sourceTree = "<group>"; };
 		38D0D34D1FC30CC700448C13 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		38D0D34F1FC30D1100448C13 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		38DB9E251FCD8C0B00FF0875 /* ProductCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCV.swift; sourceTree = "<group>"; };
+		38DB9E281FCD973B00FF0875 /* ProductCVItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVItemVM.swift; sourceTree = "<group>"; };
 		3BBDDA0FEDDBE836AA477CB4 /* Pods-pruebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaTests/Pods-pruebaTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B8FDE9F0BB5F941A77A1222 /* Pods-pruebaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaUITests/Pods-pruebaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E69C1DA67CBD6739A9AE72F /* Pods-pruebaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaUITests/Pods-pruebaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 		3845FECA1FCC1D7000D47986 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				38DB9E271FCD971E00FF0875 /* ViewsModel */,
+				38DB9E241FCD8BC200FF0875 /* Model */,
 				3845FECB1FCC1D7F00D47986 /* CollectionViewCell */,
 				3845FED21FCC20E800D47986 /* MainCVC.swift */,
 				3845FED31FCC20E800D47986 /* MainCVC.xib */,
@@ -250,6 +256,22 @@
 				0AC61BE10412A1036A15C55E /* Pods_pruebaUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38DB9E241FCD8BC200FF0875 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38DB9E251FCD8C0B00FF0875 /* ProductCV.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38DB9E271FCD971E00FF0875 /* ViewsModel */ = {
+			isa = PBXGroup;
+			children = (
+				38DB9E281FCD973B00FF0875 /* ProductCVItemVM.swift */,
+			);
+			path = ViewsModel;
 			sourceTree = "<group>";
 		};
 		AC876789E2F22A0B67ADCF97 /* Pods */ = {
@@ -523,11 +545,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-prueba/Pods-prueba-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONWebToken/JWT.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -586,6 +612,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DB9E261FCD8C0B00FF0875 /* ProductCV.swift in Sources */,
+				38DB9E291FCD973B00FF0875 /* ProductCVItemVM.swift in Sources */,
 				3845FECE1FCC1DA800D47986 /* ProductCVC.swift in Sources */,
 				387FB0D81FCC60EF0084F629 /* SliderCVC.swift in Sources */,
 				3845FED41FCC20E800D47986 /* MainCVC.swift in Sources */,

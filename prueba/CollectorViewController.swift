@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class CollectorViewController: UIViewController {
 
@@ -17,6 +18,34 @@ class CollectorViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
+        //let decoder = JSONDecoder()
+
+        let jsonString = "{\"id\": 1," +
+            "\"title\": \"Colágeno con magnesio\"," +
+            "\"pvp\": 22.49," +
+            "\"pvpDiscount\": 14.99," +
+            "\"stars\": 4," +
+            "\"image\": \"https://d2mxwq0yq0jq8b.cloudfront.net/catalog/big/38047-amazin-foods-colageno-con-magnesio-450tabs.jpg\"," +
+            "\"offer\": \"Destacado\"," +
+            "\"isFavourite\": true," +
+            "\"width\": 40," +
+            "\"action\": \"showProduct\"," +
+            "\"idAction\": \"1\"}"
+
+        if let dataFromString = jsonString.data(using: .utf8, allowLossyConversion: false) {
+            let json = try! JSON(data: dataFromString)
+
+            let producto = ProductCV(json: json)
+
+            print(producto.pvp)
+        }
+
+        //let obj: ProductCV = try! decoder.decode(ProductCV.self, from: json.data(using: .utf8)!)
+
+        //print(obj)
+
 
         let frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height*0.5)
         mainCVC = MainCVC(frame: frame, delegate: self, type: .products)

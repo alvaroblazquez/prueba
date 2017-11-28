@@ -103,7 +103,7 @@
                             <constraint firstAttribute="width" constant="38" id="GDY-67-zpf"/>
                             <constraint firstAttribute="height" constant="38" id="QFf-7m-es4"/>
                         </constraints>
-                        <state key="normal" title="♡" image="favoritos"/>
+                        <state key="normal" image="favoritos"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oferta 3 x 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OY6-cv-jwJ">
                         <rect key="frame" x="70" y="8" width="70" height="22"/>
@@ -135,10 +135,14 @@
             </constraints>
             <size key="customSize" width="140" height="214"/>
             <connections>
+                <outlet property="discountLabel" destination="RNx-UK-OXh" id="cmP-Yq-8um"/>
+                <outlet property="discountView" destination="76x-SR-aUF" id="4wd-lQ-C8E"/>
                 <outlet property="favoriteButton" destination="UAH-gq-P4a" id="GCU-Sz-bIS"/>
                 <outlet property="offerLabel" destination="OY6-cv-jwJ" id="esX-7F-Ga6"/>
                 <outlet property="photoImageView" destination="c8a-OS-6WR" id="hqB-UK-IHb"/>
                 <outlet property="priceLabel" destination="w6r-OC-2rm" id="ChI-pr-maJ"/>
+                <outlet property="pvpDiscountLabel" destination="XCl-TF-6og" id="qLG-XR-7ko"/>
+                <outlet property="starsLabel" destination="3Xh-D9-Il0" id="iKR-uZ-JoE"/>
                 <outlet property="titleLabel" destination="oou-jD-OUM" id="PFr-j2-lTZ"/>
             </connections>
             <point key="canvasLocation" x="14" y="71"/>
